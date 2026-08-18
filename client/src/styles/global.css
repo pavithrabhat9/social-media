@@ -1,19 +1,27 @@
-:root{
-  --pink: #fb839e;
-  --violet: #783F8E;
-  --blue: #49275B;
-  --c1: #FD2F24; 
-  --c2: #FF6F01; 
-  --c3: #FED800; 
-  --background-1:linear-gradient(to right, #ffc3a0, #FFAFBD);
-  --background-2:linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-  --background-3:linear-gradient(to right, #fffc00, #ffffff);;
-  --background-4:linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-  --outer-shadow: 3px 3px 3px #d0d0d0 ,-3px -3px 3px #f8f8f8;
-  --outer-shadow-0: 0 0 0 #d0d0d0 ,0 0 0 #f8f8f8;
-  --inner-shadow:inset 3px 3px 3px #d0d0d0,inset -3px -3px 3px #f8f8f8;
-  --inner-shadow-0:inset 0 0 0 #d0d0d0 ,inset 0 0 0 #f8f8f8;
+:root{
+  --primary: #4F46E5;
+  --primary-hover: #4338CA;
+  --bg-color: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  
+  --c1: var(--primary); 
+  --c2: #38BDF8; 
+  --c3: #FBBF24; 
+  
+  --background-1: var(--bg-color);
+  --background-2: var(--bg-color);
+  --background-3: var(--bg-color);
+  --background-4: var(--bg-color);
+
+  --outer-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --outer-shadow-0: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --inner-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --inner-shadow-0: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
 }
 
 
@@ -51,20 +59,30 @@
 
 .btn-1{
     padding: 10px 25px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    color: var(--c1);
-    background-color: transparent;
+    color: #fff;
+    background-color: var(--primary);
     line-height: 1.5;
     cursor: pointer;
-    border-radius: 30px;
-    transition: all 0.3s ease;
+    border-radius: 8px;
+    transition: all 0.2s ease;
     display: inline-block;
     border: none;
+    box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
 }
 
-.btn-1::after{
-    border-radius: 30px;
+.btn-1:hover{
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(79, 70, 229, 0.3);
+}
+
+.btn-1:disabled {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
 }
 
 
@@ -90,8 +108,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -113,10 +130,9 @@ code {
 .App{
   width: 100%;
   min-height: 100vh;
-  background: #eff0f4;
-  /* background: #F1F1F1; */
-  /* background: var(--background-3);  */
-
+  background: var(--bg-color);
+  color: var(--text-main);
+  overflow-x: hidden;
 }
 
 /* ! set main width here */
