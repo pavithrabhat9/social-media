@@ -2,7 +2,7 @@
 Connecting people through a modern, seamless, and real-time social experience.
 
 ![Platform](https://img.shields.io/badge/Platform-Web-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Language](https://img.shields.io/badge/Language-JavaScript-yellow)
 
 ## What is Nexus?
@@ -55,4 +55,5 @@ Nexus is a modern social media platform built to provide a premium, SaaS-like ex
 ## Why Nexus?
 Every user deserves a digital space that feels premium and responsive. Nexus was built with one goal: to create a beautiful, modern social media experience without the bloat. 
 
+---
 Built with purpose. Feedback and contributions are always welcome.
