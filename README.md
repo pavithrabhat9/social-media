@@ -6,7 +6,7 @@ Connecting people through a modern, seamless, and real-time social experience.
 ![Language](https://img.shields.io/badge/Language-JavaScript-yellow)
 
 ## What is Nexus?
-Social connection shouldn't feel clunky or outdated. Nexus is a modern social media platform built to provide a premium, SaaS-like experience for users to connect, share, and engage. From real-time messaging to dynamic content discovery, every feature is designed to be fast, responsive, and visually stunning.
+Nexus is a modern social media platform built to provide a premium, SaaS-like experience for users to connect, share, and engage. From real-time messaging to dynamic content discovery, every feature is designed to be fast, responsive, and visually stunning.
 
 ## Features
 - **Real-Time Chat & Notifications** - Instant messaging and live alerts powered by Socket.io
