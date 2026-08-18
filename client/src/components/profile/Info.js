@@ -47,22 +47,20 @@ const Info = ({id, auth, profile, dispatch}) => {
               <div className="info_content_title">
                 <h2>{user.username}</h2>
                 {user._id === auth.user._id ? (
-                  <button
-                    className="btn-1 outer-shadow hover-in-shadow"
-                    onClick={() => setOnEdit(true)}
-                  >
-                    Edit Profile
-                  </button>
-                ) : (
-                  <FollowBtn user={user} />
-                )}
-                {user._id === auth.user._id ? (
-                  <button
-                    className="btn-1 outer-shadow hover-in-shadow"
-                    onClick={() => setChangePassword(true)}
-                  >
-                    change password
-                  </button>
+                  <>
+                    <button
+                      className="btn-1 outer-shadow hover-in-shadow"
+                      onClick={() => setOnEdit(true)}
+                    >
+                      Edit Profile
+                    </button>
+                    <button
+                      className="btn-1 outer-shadow hover-in-shadow"
+                      onClick={() => setChangePassword(true)}
+                    >
+                      Change Password
+                    </button>
+                  </>
                 ) : (
                   <FollowBtn user={user} />
                 )}

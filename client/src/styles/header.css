@@ -114,10 +114,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 0.85rem;
     color: var(--text-muted);
     pointer-events: none;
     transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.header .search_form .search_icon .material-icons {
+    font-size: 1.2rem;
+}
+
+.header .search_form .search_icon span:last-child {
+    font-size: 0.9rem;
 }
 
 .header .search_form #search:focus + .search_icon {

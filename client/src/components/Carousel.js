@@ -26,14 +26,14 @@ const Carousel = ({ images, id }) => {
             {img.url.match(/video/i) ? (
               <video
                 controls
-                style={{ filter: theme ? "invert(1)" : "invert(0)" }}
+                style={{ filter: theme ? "invert(1)" : "invert(0)", maxHeight: "600px", objectFit: "contain", background: "#000" }}
                 src={img.url}
                 className="d-block w-100"
                 alt={img.url}
               />
             ) : (
               <img
-                style={{ filter: theme ? "invert(1)" : "invert(0)" }}
+                style={{ filter: theme ? "invert(1)" : "invert(0)", maxHeight: "600px", objectFit: "cover" }}
                 src={img.url}
                 className="d-block w-100"
                 alt={img.url}

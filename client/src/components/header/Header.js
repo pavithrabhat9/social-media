@@ -21,7 +21,7 @@ const Header = () => {
     <div className="header bg-light">
       <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
         <div className="container-fluid">
-          <Link to="/" className="logo" onClick={handleRefreshHome}>
+          <Link to="/" className="logo" onClick={handleRefreshHome} style={{ textDecoration: 'none' }}>
             <h1 className="navbar-brand text-uppercase p-0 m-0" style={{fontWeight: 700, letterSpacing: '1px', color: 'var(--primary)'}}>NEXUS</h1>
           </Link>
 
