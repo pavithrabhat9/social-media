@@ -49,7 +49,7 @@ const Menu = () => {
             <span className="notify_length">{notify.data.length}</span>
           </span>
 
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ right: 0, left: 'auto', minWidth: '350px' }}>
             <NotifyModal />
           </div>
         </li>
@@ -64,7 +64,7 @@ const Menu = () => {
           >
             <Avatar src={auth.user.avatar} size="medium-avatar" />
           </span>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ right: 0, left: 'auto' }}>
             <li>
               <Link
                 style={{ color: "white" }}
